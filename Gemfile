@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+ruby '2.1.0'
 
 gem 'rails', '~>4.0.0'
 
@@ -19,7 +19,7 @@ gem 'unicorn'
 
 gem 'opml_saw',              github: 'feedbin/opml_saw',            ref: '61d8c2d'
 gem 'feedzirra',             github: 'feedbin/feedzirra',           ref: '6d57e27'
-gem 'html-pipeline',         github: 'benubois/html-pipeline',      ref: '652162b'
+gem 'html-pipeline',         github: 'benubois/html-pipeline',      ref: '27a0139'
 gem 'grocer-pushpackager',   github: 'feedbin/grocer-pushpackager', ref: 'e190796', require: 'grocer/pushpackager'
 gem 'html_diff',             github: 'feedbin/html_diff',           ref: 'c7c15ce'
 
