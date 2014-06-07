@@ -5,10 +5,12 @@ rvm:
   - 2.1
 env:
   - DB=postgresql
+  - POSTGRES_USERNAME=postgres
+  - AWS_ACCESS_KEY_ID=foo
+  - AWS_SECRET_ACCESS_KEY=bar
+  - AWS_S3_BUCKET=foobar
 before_script:
   - psql -c 'create database feedbin_test;' -U postgres
 script:
-  - export POSTGRES_USERNAME=postgres
-  - export RAILS_ENV=test
   - bundle exec rake db:setup
   - bundle exec rake db:test:prepare
